@@ -15,42 +15,42 @@ import java.util.function.Supplier;
  */
 public class LambdaTest {
     public static void main(String[] args) throws Exception {
-//        Runnable runnable = new Runnable() {
-//            @Override
-//            public void run() {
-//                System.out.println("running1 .....");
-//            }
-//        };
-//        runnable.run();
-//
-//        Runnable runnable2 = ()->{
-//            System.out.println("running2....");
-//        };
-//        runnable2.run();
-//
-//        Runnable runnable3 = ()-> System.out.println("running3....");
-//        runnable3.run();
-//
-//        Callable<String> c1 = new Callable() {
-//            @Override
-//            public String call() throws Exception {
-//                return "mashibing";
-//            }
-//        };
-//        System.out.println(c1.call());
-//
-//        Callable<String> c2 = ()->{return "mashibing2";};
-//        System.out.println(c2.call());
-//
-//        Callable<String> c3 = ()->"mashibing3";
-//        System.out.println(c3.call());
-//
-//        StudentDao sd1 = new StudentDao() {
-//            @Override
-//            public void insert(Student student) {
-//                System.out.println("插入学生1");
-//            }
-//        };
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("running1 .....");
+            }
+        };
+        runnable.run();
+
+        Runnable runnable2 = ()->{
+            System.out.println("running2....");
+        };
+        runnable2.run();
+
+        Runnable runnable3 = ()-> System.out.println("running3....");
+        runnable3.run();
+
+        Callable<String> c1 = new Callable() {
+            @Override
+            public String call() throws Exception {
+                return "abc";
+            }
+        };
+        System.out.println(c1.call());
+
+        Callable<String> c2 = ()->{return "abc";};
+        System.out.println(c2.call());
+
+        Callable<String> c3 = ()->"abc";
+        System.out.println(c3.call());
+
+        StudentDao sd1 = new StudentDao() {
+            @Override
+            public void insert(Student student) {
+                System.out.println("插入学生1");
+            }
+        };
 //
 //        StudentDao sd2 = (student)->{
 //            System.out.println("student: "+student);
@@ -84,17 +84,17 @@ public class LambdaTest {
 //        *
 //        *
 //        * */
-//        Function<String,Integer> f1 = (str)->{return str.length();};
-//        System.out.println(f1.apply("abcdefg"));
-//
-//        Supplier<String> s1 = ()->{return "mashibing";};
-//        Supplier<String> s2 = ()->"mashibing2";
-//        System.out.println(s1.get());
-//        System.out.println(s2.get());
-//
-//        Consumer<String> c11 = (str) -> System.out.println(str);
-//        c11.accept("beijing");
-//        System.out.println("---------------");
+        Function<String,Integer> f1 = (str)->{return str.length();};
+        System.out.println(f1.apply("abcdefg"));
+
+        Supplier<String> s1 = ()->{return "wawa";};
+        Supplier<String> s2 = ()->"321321";
+        System.out.println(s1.get());
+        System.out.println(s2.get());
+
+        Consumer<String> c11 = (str) -> System.out.println(str);
+        c11.accept("beijing");
+        System.out.println("---------------");
 
         BiFunction<String,String,Integer> bf = (a,b)->a.length()+b.length();
         System.out.println(bf.apply("abc", "def"));
