@@ -1,4 +1,4 @@
-package com.wangcv.study.lambda;
+package com.wangc.study.lambda;
 
 @FunctionalInterface
 public interface TeacherDao {

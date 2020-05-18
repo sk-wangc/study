@@ -1,6 +1,5 @@
-package com.wangcv.study.lambda;
+package com.wangc.study.lambda;
 
-import java.awt.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Callable;

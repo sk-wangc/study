@@ -1,4 +1,4 @@
-package com.wangcv.study;
+package com.wangc.study;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
